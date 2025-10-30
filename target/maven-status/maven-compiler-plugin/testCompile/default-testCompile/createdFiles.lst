@@ -1,0 +1,3 @@
+com\timetracker\aggregation\MinuteAggregatorTest.class
+com\timetracker\util\PathUtilsTest.class
+com\timetracker\app\AppResolverTest.class

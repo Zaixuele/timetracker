@@ -1,0 +1,41 @@
+{
+  "samplingIntervalSeconds": 1,
+  "minActiveInMinuteSeconds": 15,
+  "minIdleSeconds": 60,
+  "storage": {
+    "type": "CSV",
+    "csv": {
+      "rootDir": "%APPDATA%/TimeTracker/data",
+      "flushIntervalMinutes": 1,
+      "maxBatchSize": 100
+    },
+    "sqlite": {
+      "databasePath": "%APPDATA%/TimeTracker/data/timetracker.db",
+      "journalMode": "WAL"
+    }
+  },
+  "report": {
+    "rootDir": "%APPDATA%/TimeTracker/report",
+    "generateTime": "23:59",
+    "topN": 10,
+    "includeIdleInBar": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "%APPDATA%/TimeTracker/logs/app.log",
+    "maxSizeMB": 5,
+    "rotationCount": 5
+  },
+  "aliases": [
+    {
+      "match": "chrome.exe",
+      "name": "Chrome"
+    }
+  ],
+  "whitelist": [],
+  "blacklist": [],
+  "privacy": {
+    "recordWindowTitle": false,
+    "titleHashSalt": ""
+  }
+}
