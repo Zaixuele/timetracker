@@ -2,6 +2,9 @@
 
 一款 Windows 前台使用追踪器，以极低开销记录每分钟的专注时间，生成每日 HTML 报告，并提供系统托盘控制。  
 Windows foreground usage tracker that captures per-minute focus time with minimal overhead, daily HTML reporting, and a system-tray controller.
+双击 `scripts` 文件夹下 `run-bg.vbs` 即可使用，启动成功后在托盘处显示图标。
+Double-click `run-bg.vbs` in the `scripts` folder to launch the program.
+Once started successfully, an icon will appear in the system tray.
  
 ## 功能特性(Features)
 - 使用 Win32 API 每秒采样一次前台进程（可配置），并按分钟聚合，设有 15 秒活跃阈值与空闲检测。  
