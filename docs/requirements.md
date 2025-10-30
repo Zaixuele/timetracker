@@ -143,18 +143,18 @@
 ### 6.1 CSV Schema
 File: `YYYY/MM/DD.csv`
 
-| Column          | Type    | Notes                                  |
-|-----------------|---------|----------------------------------------|
-| date            | string  | `YYYY-MM-DD`                           |
-| minute          | string  | `HH:mm`                                |
-| status          | string  | `Active` or `Idle`                     |
-| app_id          | string  | Normalized exe path hash               |
-| app_name        | string  | Resolved alias name                    |
-| exe_path        | string  | Full executable path                   |
-| minutes         | int     | Always `1`                             |
-| idle_seconds    | int     | Idle seconds in minute (if Idle)       |
-| active_seconds  | int     | Active seconds for winning app         |
-| title_hash      | string  | Optional; blank if disabled            |
+| Column         | Type   | Notes                            |
+| -------------- | ------ | -------------------------------- |
+| date           | string | `YYYY-MM-DD`                     |
+| minute         | string | `HH:mm`                          |
+| status         | string | `Active` or `Idle`               |
+| app_id         | string | Normalized exe path hash         |
+| app_name       | string | Resolved alias name              |
+| exe_path       | string | Full executable path             |
+| minutes        | int    | Always `1`                       |
+| idle_seconds   | int    | Idle seconds in minute (if Idle) |
+| active_seconds | int    | Active seconds for winning app   |
+| title_hash     | string | Optional; blank if disabled      |
 
 ### 6.2 SQLite Schema (planned)
 
